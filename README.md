@@ -1,3 +1,10 @@
-### 吴君凯的个人网站测试
-　　不要问我为什么开始用 github 做个人页面，因为我亲爱的表哥不让我用他的服务器来搞一些奇怪的东西  
-　　所以我要开始试试 github 的个人主页了。想看看到底可以写到多强大。
+### 吴君凯的个人主页
+#### 说明
+　　这是[吴君凯](wujunkai20041123@outlook.com)的个人主页。目前还在测试阶段。  
+　　我之前一直用我哥的服务器来挂我的个人主页。之所以搬到[GitHub](https://github.com)上，是因为我哥说，要学会用最简单的工具完成最优秀的作品。  
+　　嗯，如果有可能，我会把我完整的个人主页迁移到[GitHub](https://github.com)上来。
+
+#### 参考
+　　[小福](https://woshixiaofu666.github.com)的主页  
+　　GitHub[官方文档](https://pages.github.com)  
+　　好用的markdown网页渲染[markdeep](https://casual-effects.com/markdeep)  
