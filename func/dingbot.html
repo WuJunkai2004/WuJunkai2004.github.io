@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+    <head>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.8.9/brython.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.8.9/brython_stdlib.js"></script>
+    </head>
+    <body onload="brython(1)">
+            <script type="text/python" src="dingbot.py" name="dingbot"></script>
+            <script type="text/python" name="main">
+            from browser import document
+            from browser import alert
+            def echo(event):
+                alert(document["zone"].value)
+                import dingbot
+            document["mybutton"].bind("click", echo)
+            </script>
+            <input id="zone"><button id="mybutton">click !</button>
+
+    </body>
+</html>
