@@ -11,7 +11,7 @@
             from browser import alert
             def echo(event):
                 key=document["zone"].value
-                robot=dingbot(key)
+                robot=Dingbot(key)
                 robot.text('cs')
             document["mybutton"].bind("click", echo)
             </script>
