@@ -1,0 +1,8 @@
+{
+    "title":"我知道",
+    "body":[
+        {"type":"text","text":"正文内容"},
+        {"type":"image","url":"https://wx1.sinaimg.cn/large/55508e00gy1gc52n0ianqj21bc0u01ky.jpg"},
+        {"type":"link","text":"测试链接","url":"https://www.baidu.com"}
+    ]
+}
