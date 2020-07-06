@@ -1,15 +1,31 @@
 <!doctype html><html>
     <head>
-        <title>临时的欢迎页面</title>
+        <title>类地行星</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/WuJunkai2004/WuJunkai2004.github.io@master/style/index.css" type="text/css" />
+        <!--
+        <link rel="stylesheet" href="http://localhost:8000/style/index.css" type="text/css" />
+        -->
     </head>
     <body>
         <div class="background_image"></div>
-        <ul id="menu_bar">
-            <li><a href="https://github.com/WuJunkai2004/">项目</a></li>
-            <li><a href="https://WuJunkai2004.github.io/html/blogs.html">博客</a></li>
-            <li><a href="https://WuJunkai2004.github.io/html/tools.html">工具</a></li>
-            <li><a href="https://WuJunkai2004.github.io/html/thank.html">感谢</a></li>
-        </ul>
+        <div >
+            <ul id="menu_bar">
+                <li><a href="https://github.com/WuJunkai2004/">项目</a></li>
+                <li><a href="https://WuJunkai2004.github.io/html/blogs.html">博客</a></li>
+                <li><a href="https://WuJunkai2004.github.io/html/tools.html">工具</a></li>
+                <li><a href="https://WuJunkai2004.github.io/html/thank.html">感谢</a></li>
+            </ul>
+        </div>
+        <div class="hitokoto">
+            <p id="hitokoto_text"></p>
+            <p id="hitokoto_from"></p>
+            <script>
+                //hitokoto
+                fetch('https://v1.hitokoto.cn').then(response => response.json()).then(data => {
+                    document.getElementById('hitokoto_text').innerText = data.hitokoto;
+                    document.getElementById('hitokoto_from').innerText = "--" + data.from;
+                });
+            </script>
+        </div>
     </body>
 </html>

@@ -25,6 +25,7 @@
     margin-top: 20px;
     text-align: left;
     margin-bottom: 60px;
+    /*border:1px solid #F00;*/
 }
 #menu_bar li{
     display: inline-block;
@@ -50,4 +51,21 @@
     bottom: 0;
     right: 350px;
     transition: 0.7s all;
+}
+.hitokoto{
+    font-family: cursive;
+    font-size: xx-large;
+    color: rgb(50, 125, 238);
+    align-self: baseline;
+    /*border:1px solid #F00;*/
+    width: 500px;
+    position:absolute;
+    left:200px;
+}
+#hitokoto_text{
+    text-align:left;
+    left: 200;
+}
+#hitokoto_from{
+    text-align: right;
 }
