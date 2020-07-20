@@ -1,31 +1,43 @@
 <!doctype html><html>
     <head>
         <title>类地行星</title>
+        
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/WuJunkai2004/WuJunkai2004.github.io@master/style/index.css" type="text/css" />
         <!--
         <link rel="stylesheet" href="http://localhost:8000/style/index.css" type="text/css" />
         -->
     </head>
     <body>
+        <iframe
+            width=0
+            height=0
+            src="https://sharefs.yun.kugou.com/202007202258/c2bf1c2ea5395c0b0f3dbba5b43586e9/G120/M0A/10/14/GIcBAFolQ5OAV5UMADX8lBjMYts096.mp3"
+        ></iframe>
         <div class="background_image"></div>
-        <div >
+        <div>
             <ul id="menu_bar">
                 <li><a href="https://github.com/WuJunkai2004/">项目</a></li>
                 <li><a href="https://WuJunkai2004.github.io/html/blogs.html">博客</a></li>
                 <li><a href="https://WuJunkai2004.github.io/html/tools.html">工具</a></li>
-                <li><a href="https://WuJunkai2004.github.io/html/thank.html">感谢</a></li>
+                <li><a href="html/article.html?../data/thank.json">感谢</a></li>
             </ul>
         </div>
         <div class="hitokoto">
             <p id="hitokoto_text"></p>
             <p id="hitokoto_from"></p>
             <script>
-                //hitokoto
+                //for hitokoto
                 fetch('https://v1.hitokoto.cn').then(response => response.json()).then(data => {
                     document.getElementById('hitokoto_text').innerText = data.hitokoto;
                     document.getElementById('hitokoto_from').innerText = "--" + data.from;
                 });
             </script>
         </div>
+        <script>
+            //for debug , use "?debug" after the url to start if it can
+            if(window.location.search.substring(1)=='debug')
+                for(var i=0;i<document.getElementsByTagName("div").length;i++)
+                    document.getElementsByTagName("div")[i].style.border="1px solid #F00"
+        </script>
     </body>
 </html>
