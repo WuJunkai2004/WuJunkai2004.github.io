@@ -2,11 +2,14 @@
 <html>
     <head>
         <title>轻小说</title>
+        <!--
         <script src="https://cdn.jsdelivr.net/gh/WuJunkai2004/WuJunkai2004.github.io@master/code/nodebug.js"></script>
-        <script src="https://cdn.jsdelivr.net/gh/WuJunkai2004/WuJunkai2004.github.io@master/code/novel.js"></script>
-        <script src=""></script>
+        <script src="https://cdn.jsdelivr.net/gh/WuJunkai2004/WuJunkai2004.github.io@master/code/novel.js"></script>-->
+        <script src="http://localhost:8000/code/novel.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/WuJunkai2004/WuJunkai2004.github.io@master/code/UrlAttr.js"></script>
+        <style type="text/css">body{overflow:scroll;overflow-x:hidden;overflow-y:hidden;}</style>
     </head>
     <body>
-        <script>novel(2480)</script>
+        <script>if(GetUrlAttr().id)novel(GetUrlAttr().id);else document.body.innerHTML="需要参数"</script>
     </body>
 </html>
