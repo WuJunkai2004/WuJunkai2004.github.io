@@ -176,7 +176,7 @@ Code derived and rehashed from:
 Apache 2.0
 
 ## Other
-翻译者 ：[Wu Junkai](https://github.com/WuJunkai2004/)
-这篇README是我在未经许可的情况下翻译的，[原文](https://github.com/kaonashi-tyc/zi2zi/blob/master/README.md)在这里。
-翻译者还仅是个学生，文笔拙劣。部分翻译为节省工作量，使用机翻。若有翻译错误或翻译不到位的地方，请谅解。
-图片使用[jsDelivr](https://www.jsdelivr.com/)进行加速显示。
+翻译者 ：[Wu Junkai](https://github.com/WuJunkai2004/)  
+这篇README是我在未经许可的情况下翻译的，[原文](https://github.com/kaonashi-tyc/zi2zi/blob/master/README.md)在这里。  
+翻译者还仅是个学生，文笔拙劣。部分翻译为节省工作量，使用机翻。若有翻译错误或翻译不到位的地方，请谅解。  
+图片使用[jsDelivr](https://www.jsdelivr.com/)进行加速显示。  
