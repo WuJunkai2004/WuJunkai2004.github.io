@@ -4,18 +4,19 @@
 <img src="https://cdn.jsdelivr.net/gh/kaonashi-tyc/zi2zi@master/assets/intro.gif"/>
 </p>
 
-## Introduction
-使用 GAN 学习东亚文字的字体。 zi2zi(字到字, 意思是将一种文字转化为另一种文字) 是最近流行的 [pix2pix](https://github.com/phillipi/pix2pix) 模型在汉字中的应用和扩展。
+## 介绍
+zi2zi(字到字, 意思是将一种文字转化为另一种文字) 使用 GAN 学习东亚文字的字体，是最近流行的 [pix2pix](https://github.com/phillipi/pix2pix) 模型在汉字中的应用和扩展。
 
 详细内容可以在这篇[**博客**](https://kaonashi-tyc.github.io/2017/04/06/zi2zi.html)中找到。
 
-## Network Structure
-### Original Model
+## 神经网络结构
+### 原始模型
 ![alt network](https://cdn.jsdelivr.net/gh/kaonashi-tyc/zi2zi@master/assets/network.png)
 
-The network structure is based off pix2pix with the addition of category embedding and two other losses, category loss and constant loss, from [AC-GAN](https://arxiv.org/abs/1610.09585) and [DTN](https://arxiv.org/abs/1611.02200) respectively.
+这个神经网络结构基于 pix2pix 。同时添加了 category embedding 和两种 loss —— category loss 和 constant loss ，分别来自 [AC-GAN](https://arxiv.org/abs/1610.09585) 和 [DTN](https://arxiv.org/abs/1611.02200)。  
+> The network structure is based off pix2pix with the addition of category embedding and two other losses, category loss and constant loss, from [AC-GAN](https://arxiv.org/abs/1610.09585) and [DTN](https://arxiv.org/abs/1611.02200) respectively.
 
-### Updated Model with Label Shuffling
+### 使用 Label Shuffling 更新模型
 
 ![alt network](https://cdn.jsdelivr.net/gh/kaonashi-tyc/zi2zi@master/assets/network_v2.png)
 
@@ -25,7 +26,7 @@ Specifically, within a given minibatch, for the same set of source characters, w
 
 You can enable label shuffling by setting **flip_labels=1** option in **train.py** script. It is recommended that you enable this after **d_loss** flatlines around zero, for further tuning.
 
-## Gallery
+## 画廊
 ### Compare with Ground Truth
 
 <p align="center">
@@ -175,7 +176,7 @@ Code derived and rehashed from:
 Apache 2.0
 
 ## Other
-翻译者 ： [Wu Junkai](https://github.com/WuJunkai2004/)
+翻译者 ：[Wu Junkai](https://github.com/WuJunkai2004/)
 这篇README是我在未经许可的情况下翻译的，[原文](https://github.com/kaonashi-tyc/zi2zi/blob/master/README.md)在这里。
 翻译者还仅是个学生，文笔拙劣。部分翻译为节省工作量，使用机翻。若有翻译错误或翻译不到位的地方，请谅解。
-图片使用[jsDelivr](https://www.jsdelivr.com/)进行加速显示。第一张图不知道为什么显示不出来，但是点进去确实可以看到。
+图片使用[jsDelivr](https://www.jsdelivr.com/)进行加速显示。
