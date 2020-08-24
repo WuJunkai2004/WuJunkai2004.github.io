@@ -29,6 +29,8 @@ function background()
 async function change_back_image(images,seconds=10)
 {
     var back=background();
+    back.style.backgroundImage=`url("${images[images.length-1]}")`;
+
     var num=0;
     while(true){
         if(num==images.length)
