@@ -3,9 +3,10 @@
         <meta charset="UTF-8">
         <title>类地行星</title>
 
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/WuJunkai2004/WuJunkai2004.github.io@master/style/index.css" type="text/css" />
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/WuJunkai2004/WuJunkai2004.github.io@master/style/index.css" type="text/css" />
         <!--
-        <link rel="stylesheet" href="http://localhost:8000/style/index.css" type="text/css" />        -->
+            <link rel="stylesheet" href="http://localhost:8000/style/index.css" type="text/css" />
+        -->
         <meta name="author" content="Wu Junkai (wu.junkai@qq.com)"/>
         <meta name="description" content="大鼻孔外星人的个人页面"/>
     </head>
@@ -30,7 +31,7 @@
                 hitokoto();
             </script>
         </div>
-        <script src="code/debug.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/WuJunkai2004/WuJunkai2004.github.io@master/code/debug.js"></script>
         <script>
             debug(window.location.search.substring(1));
         </script>
@@ -38,7 +39,50 @@
             resize=function(){};
         </script>
         <script>
-            environment('');
+            var back=document.getElementsByClassName("background_image")[0];
+            function sleep(ms)
+            {
+                return new Promise( function(resolve, reject){
+                    setTimeout(
+                        function(){resolve();},
+                        ms
+                    );
+                });
+            }
+            async function change_back_image(images)
+            {
+                var num=0;
+                back.style.opacity=0.5;
+                while(true){
+                    if(num==images.length)
+                        num=0;
+
+                    for(var i=1.0;i>=0.33;i-=0.01){
+                        back.style.opacity=i;
+                        await sleep(100);
+                    }
+
+                    back.style.backgroundImage=`url("${images[num]}")`
+
+                    for(var i=0.33;i<=1;i+=0.01){
+                        back.style.opacity=i;
+                        await sleep(100);
+                    }
+                    console.log(num)
+
+                    num+=1;
+                }
+            }
+            change_back_image([
+                'https://i.loli.net/2020/07/29/zUfF8nJcldi72YB.jpg',
+                'https://i.loli.net/2020/07/29/KTwJpzL2dVB8xyW.jpg',
+                'https://i.loli.net/2020/07/29/9nFEseJkIApRL4D.jpg',
+                'https://i.loli.net/2020/07/29/f7BKQuAYGL3v4qs.png',
+                'https://i.loli.net/2020/07/29/gwRiXQSmWvkqsLp.png',
+                'https://i.loli.net/2020/07/29/t3mMcIVql5uSZF1.jpg',
+                'https://i.loli.net/2020/07/21/KQwyWui97gsrVPY.jpg'
+            ])
         </script>
+
     </body>
 </html>
