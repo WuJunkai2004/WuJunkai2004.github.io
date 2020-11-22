@@ -1,0 +1,5 @@
+﻿{
+  "Description": "Microsoft 365 的域所有权验证文件 - 放置在网站根目录中",
+  "Domain": "wujunkai2004.github.io",
+  "Id": "65871f6e-ee4a-4ea1-8f4c-7b652309eb38"
+}
